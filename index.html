@@ -1,33 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/scss/syles.scss">
     <title>Vite + TS</title>
   </head>
   <body>
-    <header>
-      <section class="headerTitle-container">
-        <h1 class="headerTitle">Riwi Store</h1>
-      </section>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="/">Home</a></li>
-          <li><a href="./View/addProduct.html">Agregar producto</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <main>
       <form action="" id="login-form">
-        <input type="email" placeholder="email" id="email-user">
-        <input type="password" placeholder="contraseña" id="password-user">
+        <input type="email" id="email-user" placeholder="email" />
+        <input type="password" id="password-user" placeholder="contraseña" />
         <button type="submit">Enviar</button>
       </form>
     </main>
 
-    <script type="module" src="./main.ts"></script>
+    <script type="module" src="/main.ts"></script>
   </body>
 </html>
