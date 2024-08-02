@@ -1,4 +1,4 @@
-import { ILogin } from "../model/Ilogin";
+import { ILogin } from "../model/ILogin";
 
 
 export class PageController{
