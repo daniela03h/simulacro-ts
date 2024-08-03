@@ -1,4 +1,4 @@
-import { PageController } from './src/controllers/page.controller'
+import { AuthController } from './src/controllers/auth.controller'
 
 const loginForm = document.querySelector('#login-form') as HTMLFormElement
 const emailUser = document.querySelector('#email-user') as HTMLInputElement
@@ -16,8 +16,8 @@ loginForm.addEventListener("submit", async (event: Event) => {
 
     try {
 
-    const pageController = new PageController(url)
-    const responseOfLogin = await pageController.login(user, 'login')
+    const authController = new AuthController(url)
+    const responseOfLogin = await authController.login(user, 'login')
     console.log(responseOfLogin.token);
     sessionStorage.setItem('token', responseOfLogin.token)
 

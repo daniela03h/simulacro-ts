@@ -1,5 +1,10 @@
 import { ICity } from "../model/ICity";
 import '../scss/card.scss'
+import { CitiesController } from "./cities.controller";
+import { renderCitiesCard } from "./renderCitiesCard";
+
+const url = "http://localhost:3000/"
+const citiesController = new CitiesController(url)
 
 export const Card = (props: ICity, temperature: number): HTMLElement => {
     let { id, city, country, image, cityDescription } = props;
@@ -14,6 +19,7 @@ export const Card = (props: ICity, temperature: number): HTMLElement => {
 
     const cardTitle = document.createElement("h4") as HTMLHeadElement;
     cardTitle.className = "card-title"
+
     const cardCountry = document.createElement("p") as HTMLParagraphElement;
     const cardDescription = document.createElement("p") as HTMLParagraphElement;
 
@@ -28,10 +34,25 @@ export const Card = (props: ICity, temperature: number): HTMLElement => {
     const crossContainer = document.createElement("span");
     crossContainer.className = "cross-container";
     crossContainer.innerHTML = `<i product-id = ${id} class="bi bi-x-circle-fill"></i>`
-   
-    infoContainer.append(cardTitle, cardCountry, cardDescription, temp);
 
-    cardContainer.append(img, infoContainer, crossContainer);
+    crossContainer.addEventListener('click', async () => {
+        if(confirm("Estas seguro que deseas eliminar?")){
+            await citiesController.deleteCity('cities', id)
+            renderCitiesCard()
+        }
+    })
+   
+    infoContainer.append(cardTitle, cardCountry, temp);
+
+    const buttonContainer = document.createElement("div") as HTMLDivElement;
+    buttonContainer.className = "button-container"
+    const viewMoreButton = document.createElement("button") as HTMLButtonElement
+    viewMoreButton.innerHTML= `Ver más`
+    viewMoreButton.className = "viewMore-button"
+    viewMoreButton.setAttribute("id-button", String(id))
+
+    buttonContainer.append(viewMoreButton)
+    cardContainer.append(img, infoContainer, buttonContainer, crossContainer);
 
     return cardContainer;
 }

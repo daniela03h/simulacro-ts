@@ -1,84 +1,12 @@
 {
   "cities": [
     {
+      "id": "4779",
       "city": "Medellin",
-      "country": "Colombia ",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSajIEArYzWnWBHJrCywe10S_pfzvMaxFL0Hw&s",
-      "date": "2024-08-01T17:18:29.639Z",
-      "cityDescription": "flkffj",
-      "id": "d2be"
-    },
-    {
-      "id": "7c82",
-      "city": "cali",
-      "country": "colombia",
+      "country": "Colombia",
       "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:18:12.437Z",
-      "cityDescription": "aaa"
-    },
-    {
-      "id": "4abc",
-      "city": "bucaramanga",
-      "country": "colombia",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:21:02.504Z",
-      "cityDescription": "qqq"
-    },
-    {
-      "id": "b29b",
-      "city": "a",
-      "country": "a",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:21:52.949Z",
-      "cityDescription": "a"
-    },
-    {
-      "id": "5425",
-      "city": "medellin",
-      "country": "colombia",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:24:04.286Z",
-      "cityDescription": "aa"
-    },
-    {
-      "id": "26b8",
-      "city": "medellin",
-      "country": "colombia",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:30:17.911Z",
-      "cityDescription": "ddd"
-    },
-    {
-      "id": "9c27",
-      "city": "medellin",
-      "country": "colombia",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:31:52.347Z",
-      "cityDescription": "ff"
-    },
-    {
-      "id": "c02f",
-      "city": "medellin",
-      "country": "a",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:33:05.989Z",
-      "cityDescription": "  sss"
-    },
-    {
-      "id": "ea75",
-      "city": "cali",
-      "country": "x",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:34:30.724Z",
-      "cityDescription": "dd"
-    },
-    {
-      "id": "29cc",
-      "city": "cc",
-      "country": "a",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
-      "date": "2024-08-02T14:36:45.516Z",
-      "cityDescription": "ddd"
+      "date": "2024-08-03T19:22:56.817Z",
+      "cityDescription": "nn"
     }
   ]
 }
