@@ -1,0 +1,20 @@
+{
+  "cities": [
+    {
+      "id": "4779",
+      "city": "Medellin",
+      "country": "Colombia",
+      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
+      "date": "2024-08-03T19:22:56.817Z",
+      "cityDescription": "nn"
+    },
+    {
+      "city": "bogota",
+      "country": "colombia",
+      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
+      "cityDescription": "mmm",
+      "date": "2024-08-05T04:53:20.404Z",
+      "id": "049c"
+    }
+  ]
+}
