@@ -9,12 +9,20 @@
       "cityDescription": "nn"
     },
     {
-      "city": "bogota",
+      "city": "Bogota",
       "country": "colombia",
-      "image": "https://www.travelers.com.co/assets/cache/uploads/medellin/1300x868/medellin-travelers-apartamentos-suites-colombia.jpeg",
+      "image": "https://www.idt.gov.co/sites/default/files/styles/large/public/articles/WhatsApp%20Image%202023-08-08%20at%201.00.59%20PM.jpeg?itok=odl2Yovi",
       "cityDescription": "mmm",
-      "date": "2024-08-05T04:53:20.404Z",
+      "date": "2024-08-05T05:07:46.441Z",
       "id": "049c"
+    },
+    {
+      "id": "a47b",
+      "city": "Cali",
+      "country": "Colombia",
+      "image": "https://www.elpais.com.co/resizer/v2/XKBSGMRM2JDZPP7AIMHZ7ZQH3M.jpg?auth=248a8ed0263fd53fad17819d648453a3ffe607fac0f8b793820d23d132062fde&smart=true&quality=75&width=1280&height=720",
+      "date": "2024-08-05T05:07:11.240Z",
+      "cityDescription": "Cali la arenosa, llena de salsa, empanadas, cholado y sabor"
     }
   ]
 }
