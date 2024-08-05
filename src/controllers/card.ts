@@ -45,13 +45,28 @@ export const Card = (props: ICity, temperature: number): HTMLElement => {
     infoContainer.append(cardTitle, cardCountry, temp);
 
     const buttonContainer = document.createElement("div") as HTMLDivElement;
-    buttonContainer.className = "button-container"
+    buttonContainer.className = "button-container d-flex justify-content-between px-3"
     const viewMoreButton = document.createElement("button") as HTMLButtonElement
     viewMoreButton.innerHTML= `Ver más`
-    viewMoreButton.className = "viewMore-button"
-    viewMoreButton.setAttribute("id-button", String(id))
+    viewMoreButton.className = "viewMore-button btn btn-primary"
+    //viewMoreButton.setAttribute("id-button", String(id))
 
-    buttonContainer.append(viewMoreButton)
+    viewMoreButton.addEventListener("click", () => {
+        localStorage.setItem("id-view", String(id))
+            window.location.href = "../views/infoCity.html"
+    })
+
+    const updateButton = document.createElement("button")  as HTMLButtonElement
+    updateButton.innerHTML= `Editar`
+    updateButton.className = "update-button btn btn-primary"
+
+    updateButton.addEventListener("click", () => {
+        localStorage.setItem("id-view", String(id))
+            window.location.href = "../views/editCity.html"
+    })
+
+    
+    buttonContainer.append(viewMoreButton, updateButton)
     cardContainer.append(img, infoContainer, buttonContainer, crossContainer);
 
     return cardContainer;
