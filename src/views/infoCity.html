@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/infoCity.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loader-container"></div>
+    <header>
+      <section class="headerTitle-container">
+        <h1 class="headerTitle">Riwi Weather</h1>
+      </section>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./addCity.html">Agregar ciudad</a></li>
+          <li><button id="logout-button" class="btn btn-primary">Log out</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img class="img-fluid rounded-start img-card" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-bodyc d-flex flex-column align-items-center justify-content-center h-100">
+              <h5 class="card-title"></h5>
+              <p class="card-text card-country"></p>
+              <p class="card-text card-description"></p>
+              <p class="card-text card-temp"><small class="text-body-secondary"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="../controllers/info.city.ts"></script>
+  </body>
+</html>

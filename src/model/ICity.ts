@@ -4,5 +4,6 @@ export interface ICity {
     country: string,
     image: string,
     date: Date,
-    cityDescription: string
+    cityDescription: string,
+    temp?: number
 }

@@ -1,5 +1,10 @@
 import { ICity } from "../model/ICity";
 import '../scss/card.scss'
+import { CitiesController } from "./cities.controller";
+import { renderCitiesCard } from "./renderCitiesCard";
+
+const url = "http://localhost:3000/"
+const citiesController = new CitiesController(url)
 
 export const Card = (props: ICity, temperature: number): HTMLElement => {
     let { id, city, country, image, cityDescription } = props;
@@ -14,6 +19,7 @@ export const Card = (props: ICity, temperature: number): HTMLElement => {
 
     const cardTitle = document.createElement("h4") as HTMLHeadElement;
     cardTitle.className = "card-title"
+
     const cardCountry = document.createElement("p") as HTMLParagraphElement;
     const cardDescription = document.createElement("p") as HTMLParagraphElement;
 
@@ -28,10 +34,40 @@ export const Card = (props: ICity, temperature: number): HTMLElement => {
     const crossContainer = document.createElement("span");
     crossContainer.className = "cross-container";
     crossContainer.innerHTML = `<i product-id = ${id} class="bi bi-x-circle-fill"></i>`
-   
-    infoContainer.append(cardTitle, cardCountry, cardDescription, temp);
 
-    cardContainer.append(img, infoContainer, crossContainer);
+    crossContainer.addEventListener('click', async () => {
+        if(confirm("Estas seguro que deseas eliminar?")){
+            await citiesController.deleteCity('cities', id)
+            renderCitiesCard()
+        }
+    })
+   
+    infoContainer.append(cardTitle, cardCountry, temp);
+
+    const buttonContainer = document.createElement("div") as HTMLDivElement;
+    buttonContainer.className = "button-container d-flex justify-content-between px-3"
+    const viewMoreButton = document.createElement("button") as HTMLButtonElement
+    viewMoreButton.innerHTML= `Ver más`
+    viewMoreButton.className = "viewMore-button btn btn-primary"
+    //viewMoreButton.setAttribute("id-button", String(id))
+
+    viewMoreButton.addEventListener("click", () => {
+        localStorage.setItem("id-view", String(id))
+            window.location.href = "../views/infoCity.html"
+    })
+
+    const updateButton = document.createElement("button")  as HTMLButtonElement
+    updateButton.innerHTML= `Editar`
+    updateButton.className = "update-button btn btn-primary"
+
+    updateButton.addEventListener("click", () => {
+        localStorage.setItem("id-view", String(id))
+            window.location.href = "../views/editCity.html"
+    })
+
+    
+    buttonContainer.append(viewMoreButton, updateButton)
+    cardContainer.append(img, infoContainer, buttonContainer, crossContainer);
 
     return cardContainer;
 }
